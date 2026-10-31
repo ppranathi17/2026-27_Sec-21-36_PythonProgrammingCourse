@@ -1,7 +1,7 @@
-# pascal_triangle 
-n = int(input("Enter number of rows: "))
-row = [1]
+# Example solution: star grid (generalized)
+rows = int(input("Enter grid size (rows and columns): "))
 
-for i in range(n):
-    print(" " * (n - i), *row)
-    row = [1] + [row[j] + row[j+1] for j in range(len(row)-1)] + [1]
+for row_loop_var in range(1, rows + 1):
+    for column_loop_var in range(1, rows + 1):
+        print("*", end=" ")
+    print()
