@@ -1,4 +1,4 @@
-n= int(input("Enter a 3-digit number: "))
+n = int(input("Enter a 3-digit number: "))
 temp = n
 total = 0
 
