@@ -1,8 +1,6 @@
-def simple_interest(p,r,t):
-    simple=(p * r * t)/100
-    return simple
-p = float(input("Enter the amount of principal in rupees:"))
-r = float(input("Enter the rate of interest:"))
-t = float(input("Enter the duration of time:"))
-result=simple_interest(p,r,t)
-print(result)
+# Example solution: simple interest with default arguments
+def simple_interest(principal, time, rate=5):
+    return (principal * time * rate) / 100
+
+print("SI (default rate):", simple_interest(1000, 2))
+print("SI (rate=8):", simple_interest(1000, 2, 8))
